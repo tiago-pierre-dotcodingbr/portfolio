@@ -1,0 +1,30 @@
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#home h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+#home p {
+  font-weight: 500;
+  color: var(--grey);
+  margin-bottom: 3.5rem;
+}
+
+#home .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home .buttons a:nth-child(1) {
+  background: var(--green);
+  margin-right: 1.5rem;
+  color: var(--background);
+}
