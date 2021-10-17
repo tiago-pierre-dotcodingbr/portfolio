@@ -16,21 +16,27 @@
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/home.css" />
     <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/skills.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
 
     <title>Tiago Pierre - Developer</title>
   </head>
   <body>
     <header id="header" class="container">
       <a href="#home">
-        <h1 class="title">Portofólio</h1>
+        <h1 class="title">Tiago Pierre :)</h1>
       </a>
       <nav>
         <ul>
           <li><a href="#about">Sobre mim</a></li>
           <li><a href="#projects">Projetos</a></li>
-          <li><a href="#Services">Serviços</a></li>
+          <li><a href="#services">Serviços</a></li>
           <li><a href="#skills">Minhas Skills</a></li>
+          <i data-feather="x" class="icon-close"></i>
         </ul>
+        <i data-feather="menu" class="icon-menu"></i>
       </nav>
     </header>
     <main>
@@ -40,7 +46,7 @@
             Olá, eu sou o <br />
             Tiago Pierre :)
           </h2>
-          <p>Desenvolvedor Front-End & UI Designer</p>
+          <p>Desenvolvedor Front-End Junior</p>
           <div class="buttons">
             <a href="#" class="button"> Download CV </a>
             <a href="#" class="button">Entrar em contato</a>
@@ -56,55 +62,178 @@
 
       <div class="divider-1"></div>
 
-      <section id="about" class="section">
+      <section id="about" class="container">
         <h2>Sobre mim</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          ab ea consectetur libero expedita! Quae reiciendis voluptatum error
-          ipsam illo id sequi quis commodi, culpa voluptates, unde omnis optio
-          dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Fuga temporibus sunt harum iure consectetur nobis explicabo
-          dignissimos necessitatibus vero id, sequi omnis accusantium ducimus
-          magni magnam illo dolorum delectus ullam.
+          Meu nome é Tiago Pierre, sou estudante de programação desde 2018, ano
+          em que iniciei o curso de Técnico em Informática para Internet
+          (Instituto Federal do Maranhão, concluído). De lá pra cá venho focando
+          nas tecnologias ReactJS, React Native e Nodejs. Atualmente trabalho
+          como suporte de T.I na Anatel/PI e estou na trilha de ReactJs do
+          Ignite Rocktseat.
         </p>
 
         <div id="contacts">
           <div class="contact">
             <div class="icon">
-              <img src="/assets/smile.svg" alt="smile" />
+              <i class="fab fa-linkedin-in"></i>
             </div>
-            <p>Meu nome</p>
-            <p>Tiago Pierre</p>
+            <p>Linkedin</p>
+            <a href="">
+              <p>devpierre</p>
+            </a>
           </div>
           <div class="contact">
             <div class="icon">
-              <img src="/assets/mail.svg" alt="email" />
+              <i class="fab fa-github"></i>
             </div>
-            <p>E-mail</p>
-            <p>tiago_pierre@outlook.com</p>
+            <p>GitHub</p>
+            <a href="">
+              <p>tiagopierre</p>
+            </a>
           </div>
           <div class="contact">
             <div class="icon">
-              <img src="/assets/instagram.svg" alt="instagram" />
+              <i class="fab fa-instagram"></i>
             </div>
             <p>Instagram</p>
-            <p>@pierre27__</p>
+            <a href="">
+              <p>@pierre27__</p>
+            </a>
           </div>
           <div class="contact">
             <div class="icon">
-              <img src="/assets/phone.svg" alt="phone" />
+              <i class="fab fa-whatsapp"></i>
             </div>
-            <p>Telefone</p>
-            <p>(86) 98171-5449</p>
+            <p>WhatsApp</p>
+            <a href="">
+              <p>(86) 98171-5449</p>
+            </a>
           </div>
         </div>
       </section>
 
       <div class="divider-2"></div>
 
-      <section id="projects" class="container section">
+      <section id="projects" class="container">
         <h2>Projetos</h2>
+        <div class="cards-projects">
+          <a
+            href="https://github.com/tiagopierre/02-class-react-ignite-dtmoney"
+            target="blank"
+          >
+            <div class="card-project">
+              <div id="dt-money" class="box-image-project"></div>
+
+              <p>💸 dt money</p>
+              <p>ReactJS, HTML, CSS e JS.</p>
+            </div></a
+          >
+          <a
+            href="https://github.com/tiagopierre/03-class-react-ignite-ignews"
+            target="blank"
+          >
+            <div class="card-project">
+              <div id="ig-news" class="box-image-project"></div>
+              <p>📰 IG News</p>
+              <p>NextJS, HTML, CSS e JS.</p>
+            </div></a
+          >
+          <a href="https://github.com/tiagopierre/originSix" target="blank">
+            <div class="card-project">
+              <div id="beauty-salon" class="box-image-project"></div>
+              <p>Beauty Salon</p>
+              <p>HTML, CSS e JS.</p>
+            </div></a
+          >
+          <a
+            href="https://github.com/tiagopierre/challenge04-react-ignite-gorestaurant"
+            target="blank"
+          >
+            <div class="card-project">
+              <div id="go-restaurant" class="box-image-project"></div>
+              <p>Go Restaurant</p>
+              <p>ReactJs, HTML, CSS e TypesScript.</p>
+            </div></a
+          >
+          <a
+            href="https://github.com/tiagopierre/challenge03-react-ignite-rocketshoes"
+            target="blank"
+          >
+            <div class="card-project">
+              <div id="rocket-shoes" class="box-image-project"></div>
+              <p>RocktShoes</p>
+              <p>ReactJs, HTML, CSS e TypesScript.</p>
+            </div></a
+          >
+          <a
+            href="https://github.com/tiagopierre/challenge02-react-ignite-watchme"
+            target="blank"
+          >
+            <div class="card-project">
+              <div id="watchme" class="box-image-project"></div>
+              <p>Watchme</p>
+              <p>ReactJs, HTML, CSS e TypesScript.</p>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section id="services" class="container">
+        <h2>Serviços</h2>
+        <div class="cards-services">
+          <div class="card-service">
+            <i class="fas fa-code"></i>
+            <h2>Criação de sites</h2>
+          </div>
+          <div class="card-service">
+            <i class="fas fa-mobile-alt"></i>
+            <h2>Criação de Apps</h2>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section id="skills" class="container section">
+        <h2>Minhas skills</h2>
+
+        <div class="box-skills">
+          <div class="skill">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="skill">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="skill">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="skill">
+            <img src="/assets/nextjs.svg" alt="" />
+          </div>
+        </div>
       </section>
     </main>
+    <footer id="footer">
+      <p>Orgulhosamente desenvolvido por <span>Tiago Pierre</span></p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/939bb798a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <script src="/scripts/header.js"></script>
   </body>
 </html>

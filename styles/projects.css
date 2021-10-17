@@ -1,0 +1,69 @@
+#projects {
+}
+
+.cards-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem 4.5rem;
+}
+
+.card-project {
+  padding: 2.5rem 2rem;
+  background-color: var(--dark);
+}
+
+.box-image-project {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 17rem;
+  margin-bottom: 2.3rem;
+}
+
+#dt-money {
+  background-image: url('https://github.com/tiagopierre/02-class-react-ignite-dtmoney/blob/main/assets/screenshot.PNG?raw=true');
+}
+
+#ig-news {
+  background-image: url('https://github.com/tiagopierre/03-class-react-ignite-ignews/blob/main/assets/screenshot.PNG?raw=true');
+}
+
+#beauty-salon {
+  background-image: url('https://github.com/rocketseat-education/nlw-06-origin/raw/main/.github/preview.png');
+}
+
+#go-restaurant {
+  background-image: url('https://github.com/tiagopierre/challenge04-react-ignite-gorestaurant/blob/master/assets/screenshot.PNG?raw=true');
+}
+
+#rocket-shoes {
+  background-image: url('https://github.com/tiagopierre/challenge03-react-ignite-rocketshoes/blob/master/assets/screenshot.PNG?raw=true');
+}
+
+#watchme {
+  background-image: url('https://github.com/tiagopierre/challenge02-react-ignite-watchme/blob/main/assests/screenshot.PNG?raw=true');
+}
+
+.card-project img {
+  margin-bottom: 2.3rem;
+}
+
+.card-project > p:nth-child(2) {
+  font-weight: 500;
+}
+
+.card-project > p:nth-child(3) {
+  color: var(--grey);
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1280px) {
+  .cards-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 738px) {
+  .cards-projects {
+    grid-template-columns: 1fr;
+  }
+}

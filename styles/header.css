@@ -2,12 +2,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3.5rem 14rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   position: fixed;
   left: 0;
   top: 0;
   background: var(--background);
   border-bottom: 1px solid var(--dark-light);
+}
+#header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#header svg {
+  height: 3.2rem;
+  width: 3.2rem;
+  display: none;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+#header svg:hover {
+  filter: brightness(0.8);
 }
 
 #header nav ul {
@@ -43,4 +62,57 @@
 
 #header nav ul li a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  #header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    height: 50%;
+    width: 100%;
+    background-color: var(--background);
+    transition: height 0.5s;
+  }
+
+  #header nav ul.open {
+    visibility: visible;
+    height: 100%;
+  }
+
+  #header nav ul.open li {
+    font-size: 1.8rem;
+    margin-right: 0rem;
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+  #header nav ul.open a {
+    font-size: 3.2rem;
+  }
+
+  #header svg.icon-close {
+    display: block;
+    position: fixed;
+    top: -2rem;
+    right: 2rem;
+    transition: top 0.5s;
+  }
+
+  #header nav ul.open svg.icon-close {
+    top: 2rem;
+  }
+
+  #header svg.icon-menu {
+    display: block;
+  }
+
+  #header nav ul.open svg.icon-menu {
+    visibility: hidden;
+  }
 }

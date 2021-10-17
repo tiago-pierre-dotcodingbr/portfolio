@@ -1,11 +1,9 @@
 #about {
-  padding-left: 29.1rem;
-  padding-right: 29.1rem;
-}
-
-#about h2 {
-  text-align: center;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 #about > p {
@@ -37,11 +35,12 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.9rem;
+  z-index: -1;
 }
 
-#about .contact img {
-  width: 2.7rem;
-  height: 2.7rem;
+#about .contact i {
+  font-size: 3.2rem;
+  color: var(--green);
 }
 
 #about .contact p:nth-child(2) {
@@ -49,6 +48,26 @@
   margin-bottom: 0.5rem;
 }
 
-#about .contact p:nth-child(3) {
+#about .contact a {
   color: var(--grey);
+  transition: color 0.2s;
+}
+
+#about .contact a:hover {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+@media (max-width: 738px) {
+  #about #contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #about {
+    height: 100%;
+  }
 }

@@ -1,0 +1,16 @@
+#footer {
+  height: 6rem;
+  background-color: var(--dark-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#footer p span {
+  color: var(--green);
+}

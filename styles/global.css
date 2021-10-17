@@ -30,6 +30,7 @@ body {
   background-color: var(--background);
   font-family: 'DM Sans', sans-serif;
   font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
   color: var(--white);
 }
 
@@ -43,12 +44,8 @@ img {
 }
 
 .container {
-  padding: 0 14rem;
+  padding: 13rem 14rem;
   width: 100%;
-}
-
-.section {
-  padding: 13rem 0;
 }
 
 .title {
@@ -73,6 +70,8 @@ img {
 h2 {
   font-size: 3.2rem;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .divider-1 {
@@ -91,4 +90,28 @@ h2 {
     hsla(var(--hue), 65%, 88%, 0.34),
     hsla(var(--hue), 36%, 57%, 1)
   );
+}
+
+@media (max-width: 1224px) {
+  .container {
+    padding: 13rem 10rem;
+  }
+}
+
+@media (max-width: 932px) {
+  .container {
+    padding: 13rem 8rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    padding: 13rem 6rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    padding: 13rem 4rem;
+  }
 }
