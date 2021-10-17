@@ -41,7 +41,7 @@ Este projeto é uma página portfólio no formato One Page, responsiva, para usa
 
 ## 🔖 Layout
 
-Criado por [Iuri Silva](https://www.linkedin.com/in/iuricode/), o layout do projeto pode servisualizado atráves [desse link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=13190%3A3). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Criado por [Iuri Silva](https://www.linkedin.com/in/iuricode/), o layout do projeto pode ser visualizado atráves [desse link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=13190%3A3). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## 📝 Licença
 
