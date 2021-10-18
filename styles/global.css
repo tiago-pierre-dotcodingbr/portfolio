@@ -48,6 +48,10 @@ img {
   width: 100%;
 }
 
+.section {
+  height: 100vh;
+}
+
 .title {
   font-size: 2.6rem;
   font-weight: 700;
@@ -94,7 +98,7 @@ h2 {
 
 .back-to-top {
   background-color: var(--green);
-  padding: 1.5rem;
+  padding: 0.5rem;
   clip-path: circle();
   display: flex;
   align-items: center;

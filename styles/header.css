@@ -60,6 +60,7 @@
   bottom: -1.5rem;
 }
 
+#header nav ul li a.active::after,
 #header nav ul li a:hover::after {
   width: 100%;
 }
