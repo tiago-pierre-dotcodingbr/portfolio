@@ -92,6 +92,26 @@ h2 {
   );
 }
 
+.back-to-top {
+  background-color: var(--green);
+  padding: 1.5rem;
+  clip-path: circle();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3rem;
+  bottom: -3rem;
+  visibility: hidden;
+  transition: 1s;
+}
+
+.back-to-top svg {
+  color: var(--dark);
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
 @media (max-width: 1224px) {
   .container {
     padding: 13rem 10rem;
