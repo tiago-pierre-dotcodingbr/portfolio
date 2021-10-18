@@ -100,8 +100,8 @@ h2 {
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 3rem;
-  bottom: -3rem;
+  right: 1rem;
+  bottom: -5rem;
   visibility: hidden;
   transition: 1s;
 }
@@ -133,5 +133,11 @@ h2 {
 @media (max-width: 820px) {
   .container {
     padding: 13rem 4rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    padding: 13rem 1.5rem;
   }
 }
