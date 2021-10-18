@@ -40,13 +40,17 @@
   margin-right: 4.5rem;
 }
 
-#header nav ul li:nth-child(4) {
+#header nav ul li:nth-child(5) {
   margin-right: 0rem;
 }
 
 #header nav ul li a {
   position: relative;
 }
+
+/* #header nav ul li:nth-child(1) {
+  display: none;
+} */
 
 #header nav ul li a::after {
   content: '';
@@ -55,7 +59,7 @@
   background-color: var(--green);
   position: absolute;
   border-radius: 8px;
-  transition: width 0.2s;
+  transition: width 0.5s;
   left: 0;
   bottom: -1.5rem;
 }
