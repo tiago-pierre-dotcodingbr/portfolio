@@ -104,10 +104,14 @@ h2 {
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 1rem;
+  right: 2rem;
   bottom: -5rem;
   visibility: hidden;
   transition: 1s;
+}
+
+.back-to-top:hover {
+  filter: brightness(0.8);
 }
 
 .back-to-top svg {

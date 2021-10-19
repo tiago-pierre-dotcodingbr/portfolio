@@ -20,13 +20,17 @@ for (const element of headerLinks) {
   })
 }
 
+// Comando para selecionar todas as seções do site e guardar na constante sectionsAll.
+
 const sectionsAll = document.querySelectorAll('main section')
+
+// Adicionando um evento de "Scroll" na página inteira. Ou seja toda vez que o usuário rolar a página, é disparado a função contida no evento a seguir.
 
 window.addEventListener('scroll', function () {
   for (const section of sectionsAll) {
     if (
-      window.scrollY >= section.offsetTop - section.clientHeight / 2 &&
-      window.scrollY <= section.offsetTop + section.clientHeight / 2
+      window.scrollY >= section.offsetTop - 300 &&
+      window.scrollY <= section.offsetTop + section.clientHeight - 300
     ) {
       document
         .querySelector(`header nav ul li a[href="#${section.id}"]`)
@@ -37,6 +41,4 @@ window.addEventListener('scroll', function () {
         .classList.remove('active')
     }
   }
-
-  // console.log(window.scrollY)
 })

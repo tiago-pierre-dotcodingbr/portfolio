@@ -9,6 +9,7 @@
   top: 0;
   background: var(--background);
   border-bottom: 1px solid var(--dark-light);
+  z-index: 2;
 }
 #header nav {
   display: flex;
