@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="OriginSix" src="https://github.com/tiagopierre/desafio9-iurisilva-portifolio/blob/main/assets/screencapture-tiagopierre-github-io-desafio9-iurisilva-portifolio-2021-10-17-09_01_28.png?raw=true" width="100%">
+  <img alt="portfolio" src="https://github.com/tiagopierre/portfolio/blob/main/assets/screencapture-127-0-0-1-5500-2021-10-20-14_16_57.png?raw=true" width="100%">
 </p>
 
 ## 🚀 Tecnologias
