@@ -1,5 +1,5 @@
 const header = document.querySelector('header')
-const nav = document.querySelector('#nav nav ul')
+const nav = document.querySelector('#header nav ul')
 const navLinks = document.querySelectorAll('#nav nav ul li a')
 const open = document.querySelector('.icon-menu')
 const close = document.querySelector('.icon-close')

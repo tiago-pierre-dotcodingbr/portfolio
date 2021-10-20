@@ -28,14 +28,6 @@
   display: flex;
 }
 
-#header > a h2 {
-  font-size: 2rem;
-
-  color: var(--green);
-  margin-left: 1rem;
-  line-height: 1;
-}
-
 #header svg {
   height: 3.2rem;
   width: 3.2rem;
@@ -113,7 +105,7 @@
     font-size: 1.8rem;
     margin-right: 0rem;
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3.5rem;
   }
 
   #header nav ul.open a {
