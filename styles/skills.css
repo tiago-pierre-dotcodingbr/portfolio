@@ -1,9 +1,5 @@
-#skills {
-  display: flex;
-
-  justify-content: center;
-  flex-direction: column;
-  height: calc(100vh - 6rem);
+#skills.container {
+  margin-bottom: 17.9rem;
 }
 
 .box-skills {
@@ -20,8 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-top: 5rem;
 }
 
 .skill i {

@@ -1,5 +1,5 @@
 #footer {
-  height: 6rem;
+  padding: 2rem 0rem 2rem 0rem;
   background-color: var(--dark-light);
   display: flex;
   align-items: center;

@@ -1,15 +1,10 @@
-#services {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#services.container {
 }
 
 .cards-services {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4.5rem;
-  margin-top: 5rem;
 }
 
 .cards-services .card-service {

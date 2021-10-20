@@ -1,21 +1,22 @@
-const header = document.querySelector('#header nav ul')
-const headerLinks = document.querySelectorAll('#header nav ul li a')
+const header = document.querySelector('header')
+const nav = document.querySelector('#nav nav ul')
+const navLinks = document.querySelectorAll('#nav nav ul li a')
 const open = document.querySelector('.icon-menu')
 const close = document.querySelector('.icon-close')
 
 open.addEventListener('click', function () {
-  header.classList.add('open')
+  nav.classList.add('open')
   open.style.visibility = 'hidden'
 })
 
 close.addEventListener('click', function () {
-  header.classList.remove('open')
+  nav.classList.remove('open')
   open.style.visibility = 'visible'
 })
 
-for (const element of headerLinks) {
+for (const element of navLinks) {
   element.addEventListener('click', function () {
-    header.classList.remove('open')
+    nav.classList.remove('open')
     open.style.visibility = 'visible'
   })
 }
@@ -26,7 +27,7 @@ const sectionsAll = document.querySelectorAll('main section')
 
 // Adicionando um evento de "Scroll" na página inteira. Ou seja toda vez que o usuário rolar a página, é disparado a função contida no evento a seguir.
 
-window.addEventListener('scroll', function () {
+function activeMenuLink() {
   for (const section of sectionsAll) {
     if (
       window.scrollY >= section.offsetTop - 300 &&
@@ -41,4 +42,17 @@ window.addEventListener('scroll', function () {
         .classList.remove('active')
     }
   }
+}
+
+function addingStyleToHeader() {
+  if (window.scrollY >= 30) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+}
+
+window.addEventListener('scroll', function () {
+  activeMenuLink()
+  addingStyleToHeader()
 })

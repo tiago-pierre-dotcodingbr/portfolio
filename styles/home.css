@@ -1,16 +1,21 @@
 #home {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: space-between;
 }
 
-#home > div {
+#home.container {
+  padding-top: 17.9rem;
+  padding-bottom: 3.253rem;
+}
+
+/* #home > div {
   min-width: 40%;
 }
 
 #home > div:nth-child(1) {
   min-width: 50%;
-}
+} */
 
 #home h2 {
   font-size: 3.6rem;
@@ -23,6 +28,29 @@
   font-weight: 500;
   color: var(--grey);
   margin-bottom: 3.5rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 2s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 #home .buttons {
@@ -38,21 +66,40 @@
   color: var(--background);
 }
 
+#home div:nth-child(2) {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+#home img {
+  max-width: 30rem;
+  max-height: 25.447rem;
+}
+
 @media (max-width: 1024px) {
-  #home > div:nth-child(1) {
-    min-width: 55%;
+  #home {
+    grid-template-columns: 0.6fr 0.4fr;
   }
 }
 
 @media (max-width: 768px) {
-  #home {
+  #home.container {
+    display: flex;
+    align-items: center;
     flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 15rem;
   }
+
   #home h2 {
     text-align: center;
   }
   #home p {
     text-align: center;
+  }
+  #home img {
+    margin-bottom: 3rem;
   }
   #home .buttons {
     max-width: 100%;

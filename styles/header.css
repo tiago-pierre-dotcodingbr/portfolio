@@ -2,13 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
   position: fixed;
   left: 0;
   top: 0;
   background: var(--background);
-  border-bottom: 1px solid var(--dark-light);
   z-index: 2;
 }
 #header nav {
@@ -16,6 +15,25 @@
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+#header.scroll {
+  background-color: var(--dark);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+#header > a {
+  width: 5.6rem;
+  height: 4.3rem;
+  display: flex;
+}
+
+#header > a h2 {
+  font-size: 2rem;
+
+  color: var(--green);
+  margin-left: 1rem;
+  line-height: 1;
 }
 
 #header svg {

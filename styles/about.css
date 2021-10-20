@@ -1,23 +1,20 @@
 #about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
 #about > p {
   text-align: center;
   color: var(--grey);
   line-height: 3.2rem;
-  margin-bottom: 8.5rem;
+
+  margin: 0rem 20.8rem 8.5rem 20.8rem;
 }
 
 #about #contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+
+  margin: 0rem 16.7rem 0rem 16.7rem;
 }
 
 #about .contact {
@@ -58,11 +55,22 @@
   color: var(--green);
 }
 
-@media (max-width: 738px) {
+@media (max-width: 1264px) {
+  #about > p {
+    margin: 0rem 0rem 8.5rem 0rem;
+  }
+
+  #about #contacts {
+    margin: 0rem 9.7rem 0rem 9.7rem;
+  }
+}
+
+@media (max-width: 768px) {
   #about #contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin: 0rem;
   }
 }
 
