@@ -2,7 +2,6 @@ aside {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  width: 100vw;
 }
 
 main {
@@ -10,13 +9,24 @@ main {
   font-weight: 400;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header object {
+  max-height: 42.3rem;
+  width: 100%;
+}
 main h1 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 30px;
   color: #e1e1e6;
   text-align: center;
-  margin-top: 2.1rem;
+  margin-top: 2.4rem;
   margin-bottom: 0.4rem;
 }
 
