@@ -1,0 +1,63 @@
+aside {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  width: 100vw;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 30px;
+  color: #e1e1e6;
+  text-align: center;
+  margin-top: 2.1rem;
+  margin-bottom: 0.4rem;
+}
+
+main > a {
+  color: #c4c4cc;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+main > a i {
+  margin-right: 1.2rem;
+  font-size: 1.6rem;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #e1e1e6;
+  margin-bottom: 6.4rem;
+}
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div a {
+  font-size: 2.4rem;
+  color: #fff;
+  display: flex;
+  background-color: #323238;
+  padding: 1.2rem;
+  margin-right: 0.8rem;
+}
+main div a:nth-child(4) {
+  margin-right: none;
+}
+main div a i {
+  font-size: 2.4rem;
+}
