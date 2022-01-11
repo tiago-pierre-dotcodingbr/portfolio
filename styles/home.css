@@ -73,8 +73,8 @@
 }
 
 #home img {
-  max-width: 30rem;
-  max-height: 25.447rem;
+  max-width: 35rem;
+  clip-path: circle();
 }
 
 @media (max-width: 1024px) {
